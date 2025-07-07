@@ -2,14 +2,14 @@
 function generateTable() {
     // Dati di esempio per la tabella 3x3
     const data = [
-        ["Cella 1,1", "Cella 1,2", "Cella 1,3"],
-        ["Cella 2,1", "Cella 2,2", "Cella 2,3"],
-        ["Cella 3,1", "Cella 3,2", "Cella 3,3"]
+        ["Celula da linha 0, coluna 0", "Celula da linha 0, coluna 1", "Celula da linha 0, coluna 2"],
+        ["Celula da linha 1, coluna 0", "Celula da linha 1, coluna 1", "Celula da linha 1, coluna 2"],
+        ["Celula da linha 2, coluna 0", "Celula da linha 2, coluna 1", "Celula da linha 2, coluna 2"]
     ];
 
     // Creare l'HTML della tabella
     let tableHTML = `
-        <table border="1" style="border-collapse: collapse; margin: 20px 0;">
+        <table border="1" style="border: 1px solid black; margin: 20px 0;">
             <thead>        
                 <tr>       
                     <th style="padding: 10px; text-align: center;">${data[0][0]}</th>  
